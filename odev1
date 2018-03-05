@@ -1,0 +1,33 @@
+1)
+x=int(input('Finansman Gelir Giriniz'))
+y=int(input('Pazar Gelir Giriniz'))
+z=int(input('Kira Gelir Giriniz'))
+a=int(input('Ücreti yazınız'))
+b=int(input('Finansman Gider Yazınız'))
+c=int(input('Pazar Gider Yazınız'))
+d=int(input('Kira Gider Yazınız'))
+e=int(input('Muhasebe Gider Yazınız'))
+if (x+y+z)-(a+b+c+d)>1000:
+   print("Kar var")
+else:
+    print("Zarar var")
+               
+2)
+x=int(input('Planlanmış Üretim Süresi Giriniz'))
+y=int(input('Plansız Duruşu Giriniz'))
+a=int(input('Standart Çevrim Zamanı'))
+b=int(input('Üretim Miktarı'))
+c=int(input('Sağlam Ürün Miktarı'))
+d=int(input('Toplam Üretim Miktarı'))
+
+print('Kullanılabilirlik',(x+y)/x)
+print('Performans',(a*b)/(x-y))
+print('Kalite',c/d)
+print('OEE',(x+y)/x*(a*b)/(x-y)*100)
+
+3)
+x=int(input('Satış Miktarı Giriniz'))
+y=int(input('Birim Satış Fiyatı Giriniz'))
+
+print('Toplam Ciro',(x*y))
+print('Adambaşı Ciro',(x*y)/25)
